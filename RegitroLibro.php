@@ -1,4 +1,4 @@
-<?php
+<?php 
 if(isset($_POST['submit'])){
     $cod = $_POST['cod'];
     $nombre = $_POST['nombre'];
@@ -8,6 +8,7 @@ if(isset($_POST['submit'])){
     $anno = $_POST['anno'];
     $paginas = $_POST['paginas'];
     $isbn = $_POST['isbn'];
+    $x = 0;
 }
 ?>
 

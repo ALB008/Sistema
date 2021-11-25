@@ -1,5 +1,4 @@
 <?php
-
     class conectar{
         private $servidor="localhost";
         private $usser="root";
@@ -14,7 +13,5 @@
 
             return $conexion;
         }    
-    
     }
-
 ?>

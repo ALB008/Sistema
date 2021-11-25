@@ -33,13 +33,13 @@ if(isset($_POST['submit'])){
         $x+=$x;
     }
 
+    
 if ($x<=0){
+    include_once "libro.php";
     $book= new libro();
     $book->create();
 }
 
 
 }
-
-
 ?>

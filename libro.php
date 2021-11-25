@@ -1,6 +1,6 @@
 <?php
 include_once "conexion.php";
-class libro extends conexion{
+class libro extends conectar{
     private $cod;
     private $nombre;
     private $autor;
@@ -11,8 +11,7 @@ class libro extends conexion{
     private $isbn;
 
     public function create(){
-        #$sql="Add_book()";
-        echo "test";
+        $sql="Add_book()";
         
     }
 
@@ -24,13 +23,5 @@ class libro extends conexion{
 
 
 
-
-
-
-
-
-
-
 }
-
 ?>
