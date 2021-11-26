@@ -14,7 +14,7 @@ class libro extends conectar{
         $sql = "CALL Add_book('$this->cod', '$this->nombre', '$this->autor', '$this->genero', '$this->editorial', '$this->anno', '$this->paginas', '$this->isbn')";
         #$result=mysqli_query($conexion,$sql);
         if($sql){
-            echo "window.alert('Datos guardados correctamente!')";
+            echo "<script>window.alert('Datos almacenados correctamente')</script>";
         }else{
             die(mysqli_error($conexion));
             echo "G A R F I O";
