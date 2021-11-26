@@ -1,4 +1,7 @@
+
+
 <?php
+/*
 if(isset($_POST['submit'])){
     if (empty($cod)){
         echo "<p class = 'error'>* El código del libro esta vacío</p>";
@@ -33,7 +36,7 @@ if(isset($_POST['submit'])){
         $x+=$x;
     }
 
-    
+    /*
 if ($x<=0){
     include_once "libro.php";
     $book= new libro();
@@ -42,4 +45,5 @@ if ($x<=0){
 
 
 }
+*/
 ?>
