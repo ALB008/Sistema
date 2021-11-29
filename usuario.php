@@ -1,15 +1,11 @@
 <?php
 include_once "conexion.php";
-class libro extends conectar{
-    public $cod;
-    public $nombre;
-    public $estado;
-    public $autor;
-    public $genero;
-    public $editorial;
-    public $anno;
-    public $paginas;
-    public $isbn;
+class usuario extends conectar{
+    public $id;
+    public $nom;
+    public $nacim;
+    public $tel;
+    public $cor;
 
     public function read($sql){
         $c= new conectar();
@@ -23,7 +19,7 @@ class libro extends conectar{
         $c= new conectar();
         $conexion=$c->conexion();
 
-        $sql = "INSERT INTO libro(cod_lib,Nom_lib,Estado_lib,Aut_lib,Gen_lib,Edit_lib,Anno_lib,Pag_lib,ISBN_lib) VALUES ('$datos[0]', '$datos[1]', '$datos[2]', '$datos[3]', '$datos[4]', '$datos[5]', '$datos[6]', '$datos[7]', '$datos[8]')";
+        $sql = "INSERT INTO usuario(Id_usu, Nom_usu, Nacim_usu, Tel_usu, Cor_usu) VALUES ('$datos[0]', '$datos[1]', '$datos[2]', '$datos[3]', '$datos[4]')";
 
         return $result=mysqli_query($conexion,$sql);
         

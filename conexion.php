@@ -1,17 +1,13 @@
 <?php
     class conectar{
-        private $servidor="localhost";
-        private $usser="root";
-        private $pass="";
-        private $db="biblioteca";
+        private $server = "localhost";
+        private $usser = "root";
+        private $db = "biblioteca";
+        private $pass = "";
 
         public function conexion(){
-            $conexion=mysqli_connect($this->servidor,
-                                     $this->usser,
-                                     $this->pass,
-                                     $this->db);
-
+            $conexion=mysqli_connect($this->server,$this->usser,$this->pass,$this->db);
             return $conexion;
-        }    
+        }
     }
 ?>
